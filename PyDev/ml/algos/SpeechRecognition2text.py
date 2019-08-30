@@ -1,0 +1,33 @@
+import speech_recognition as sr 
+
+mic_name = "hdaudio\func_01&ven_10ec&dev_0256&subsys_102807a8"
+sample_rate = 48000
+
+chunk_size = 2048
+r = sr.Recognizer() 
+
+mic_list = sr.Microphone.list_microphone_names() 
+
+for i, microphone_name in enumerate(mic_list): 
+    if microphone_name == mic_name: 
+        device_id = i 
+
+
+with sr.Microphone() as source: 
+ 
+    r.adjust_for_ambient_noise(source) 
+    
+    print("Say something")
+    
+    audio = r.listen(source) 
+        
+    try: 
+        text = r.recognize_google(audio) 
+        print("you said: " + text) 
+    
+    
+    except sr.UnknownValueError: 
+        print("My Speech Recognition could not understand audio") 
+    
+    except sr.RequestError as e: 
+        print("Could not request results from Speech Recognition service; {0}".format(e)) 
