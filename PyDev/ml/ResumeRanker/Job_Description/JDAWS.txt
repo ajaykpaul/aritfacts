@@ -1,0 +1,5 @@
+•	  Strong Hands-on Experience in AWS services. ECS, EC2, networking, IAM,RDS,  AWS code developers  tools(CodeStar, CodeCommit, CodeBuild, CodeDeploy CodePipeline). 
+•	 Strong Hands-on   Powershell/python/script
+•	 Hands-on  CICD deployment (Jenkins, github,) AWS code developers  tools(CodeStar, CodeCommit, CodeBuild, CodeDeploy CodePipeline).
+•	 Hands-on experience container service  Docker and ECS.
+•	 Good Communication skill.

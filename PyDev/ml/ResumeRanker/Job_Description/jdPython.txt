@@ -1,0 +1,12 @@
+
+•	Strong working knowledge of Python scripting 
+•	Strong in Linux/Unix 
+•	Good to have knowledge of Infrastructure Management 
+•	Good working knowledge of unix commands
+•	Should be proficient in writing SQL queries
+•	IBM DB2 database, MQ knowledge preferred
+•	Shell scripting knowledge required. Good to have any of Perl, Ruby scripting knowledge
+•	Might be required to take up Support role along with developer role.
+•	Candidate would be required to take ownership of tasks and modules 
+•	Should be a team player who effectively builds relationships both inside and outside the organization.
+•	Excellent client Interaction & Coordination specially overlapping in evening with client

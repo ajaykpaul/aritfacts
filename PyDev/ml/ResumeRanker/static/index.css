@@ -1,0 +1,16 @@
+.form-group textarea {
+	width: 65%;
+	height: 120px;
+}
+
+body {
+	background-image: url("./static/demo.png");
+}
+
+#upload_button {
+	display: inline-block;
+}
+
+#upload_button input[type=file] {
+	display: none;
+}

@@ -1,0 +1,27 @@
+•             Design, develop, implement and support high-quality software build systems
+•             Introduce new techniques and technologies for new build systems and evolve existing systems by automating the current build, test and deployment processes for multiple development teams
+•             Develop CI-CD pipeline for application services running on Cloud infrastructure.
+•             Integrate automated builds and build artifacts into test environments, unit test harnesses, and code analysis tools
+•             Maintain and enhance external interfaces to build systems and information
+•             Provide design and implementation guidance and train team members in best practices, tool use, and quality assurance
+•             Develop build scripts and tools for builds, using most appropriate languages and technologies
+•             Implement SCM strategies and security
+•             Ensure reproducibility, traceability and dependency management for all artifacts built by CM
+•             Document and communicate the processes to other teams
+•             Perform system admin on the tools which CM provide
+•             Work closely with the development, QA and project management teams to optimize the ongoing strategies from source control through to product delivery
+•             Identify and implement innovative solutions to meet present and future customer needs; this includes forecasting needs, and deriving requirements from customer interactions, internal as well as external
+•             Provide estimates and manage own schedule at component/sub-system level , Manage build machines, servers, and build environments, and understands security concepts and processes for build systems
+
+Job Qualifications
+•             5+ years Build/Config Management/DevOps or software development experience.
+•             Proficient in working/migrating applications running on public Cloud.
+•             Experience with Git and Atlassian Tools
+•             Demonstrable experience with scripting technologies including Python, Perl
+•             Experience with administration of Source Code Management tools like GIT for code branching strategy and check in.
+•             Demonstrated a solid project where they designed and implemented a cross platform build framework Familiar with using Cloud native managed service solutions for build and deployment.
+•             Familiar with OOP with either C#, Java or C++
+•             Linux, Unix and Windows experience required
+•             Full life-cycle experience (design through delivery and support), Developing and improving CM standards, practices and procedures
+•             Excellent oral, written, and presentation skills as well as excellent interpersonal skills are required.
+•             High attention to detail with excellent analytical and troubleshooting skill 

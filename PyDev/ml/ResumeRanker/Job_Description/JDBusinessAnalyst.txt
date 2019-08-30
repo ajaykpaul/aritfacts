@@ -1,0 +1,13 @@
+•	6-12 years of Business and Data Analysis experience
+•	Good understanding of regulatory guidelines/requirement including BASEL II/III or/and CCAR or/and FDIC and/or LRR (Local Regulatory Reporting for APAC, EMEA countries)
+•	Coordinate with key stakeholders to gather requirements, analyze and finalize
+•	Facilitate and drive meetings with both business and technology teams
+•	Coordinate User Acceptance Testing with business user community and QA teams
+•	Experience in writing SQL queries with various type of joins for data validation
+•	Good experience in MS-Excel (Look Ups, Pivots)
+•	Ability to explain domain concepts to Development Teams
+•	Ability to work in tight deadlines (regulator specific) with minimal supervision.
+•	Exposure to SDLC life cycle, App development (front to back delivery e.g. estimates, planning, testing)
+•	Perform business and data analysis in development of requirements and in production parallel
+•	Should have strong knowledge on implication/changes required for regulatory compliance (BASEL, CCAR) for large banks
+•	Analyze data to ensure data quality and accurate calculation results

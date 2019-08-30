@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class="gr__getpapercss_com">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AI based Resume screening">
+<meta name="author" content="ResumeRanker">
+<link rel="shortcut icon" href="" type="image/x-icon">
+
+<title>ResumeRanker</title>
+
+<link rel="stylesheet" href="./static/paper.css" type="text/css">
+<link rel="stylesheet" href="./static/demo.css" type="text/css">
+<link href="./static/index.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" async="" src="./static/analytics.js"></script>
+<script async="" src="./static/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+
+
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('app.js', new Date());
+
+	gtag('config', 'UA-109223301-1');
+</script>
+<script>
+	$("#formid").submit(function(e) {
+
+		$("#formdiv").hide();
+		$("#resultdiv").show();
+		resetResult();
+
+		console.log("submit");
+		console.log($("#formid").serialize());
+
+		e.preventDefault();
+	});
+
+	$("resetResult").click(function() {
+		$("#formdiv").show();
+		$("#resultdiv").hide();
+	});
+
+	$(document).ready(function() {
+		$("#resultdiv").hide();
+	});
+
+	function resetResult() {
+		$("#result").innerHTML = "Processing....";
+	}
+</script>
+</head>
+<body data-gr-c-s-loaded="true">
+	<div id="top" class="row site">
+		<div class="sm-12 md-8 col">
+			<div class="paper">
+
+				{% if not session.logged_in %} <a href="{{ url_for('login') }}">log
+					in</a> {% else %} <a href="{{ url_for('logout') }}">log out</a> {%
+				endif %}
+				<div class="demo-title">
+					<div class="row flex-center">
+						<div class="text-center">
+							<h1>ResumeRanker</h1>
+							<h3>Employer resume ranking system</h3>
+						</div>
+					</div>
+				</div>
+				<div class="to-top">
+					<a href="#top" class="paper-btn margin">^</a>
+				</div>
+				<div class="section">
+
+					{% if session.logged_in %}
+
+					<div id="formdiv">
+						<br>
+						<p>JD selection</p>
+						<form action="/results" method="POST" style="text-align: center"
+							enctype="multipart/form-data">
+							<select name="des"> {% for r in results :%}
+								<option value='{{r.name}}'>{{r.name}}</option> {% endfor %}
+
+							</select>
+							<button type="submit">Screen</button>
+						</form>
+					</div>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+		<div class="sm-12 md-4 col sidebar">
+			<div class="paper">
+				<h3 class="sidebar-title" style="text-align: center">Search
+					resume</h3>
+				{% if session.logged_in %}
+				<form action="/resultsearch" method="POST">
+					<p>
+						Enter string to search within resume <input type="text"
+							name="Name" />
+					</p>
+					<p>
+						<input type="submit" value="submit" />
+					</p>
+				</form>
+				{% endif %}
+			</div>
+			<div class="paper">
+				<div class="row flex-center">
+					<p>
+						<italic>ResumeRanker</italic>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
