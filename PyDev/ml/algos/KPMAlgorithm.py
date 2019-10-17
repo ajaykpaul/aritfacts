@@ -1,5 +1,3 @@
-
- 
 def KMPSearch(pat, txt): 
     M = len(pat) 
     N = len(txt) 
@@ -16,7 +14,7 @@ def KMPSearch(pat, txt):
             j += 1
   
         if j == M: 
-            print ("Found pattern at index " + str(i - j)) 
+            print ("pattern found at index " + str(i - j)) 
             j = lps[j - 1] 
   
         elif i < N and pat[j] != txt[i]: 
@@ -48,4 +46,4 @@ def computeLPSArray(pat, M, lps):
   
 txt = "ABABDABACDABABCABAB"
 pat = "ABABCABAB"
-KMPSearch(pat, txt) 
+KMPSearch(pat, txt)
