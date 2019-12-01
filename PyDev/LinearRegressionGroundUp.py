@@ -1,15 +1,17 @@
 import numpy as np 
 import matplotlib.pyplot as plt 
 import pandas as pd
-from pptx.dml import color    
+from pptx.dml import color
+import os    
 
 """
   A very simple linear regression with least square technique and error function R**2
 
 """
 
-def main(): 
-    data = pd.read_csv("../datasets/pair1.csv")
+def main():
+    print(os.getcwd()) 
+    data = pd.read_csv("datasets/pair1.csv")
     x = data['X'].values
     y = data['Y'].values
     mean_x, mean_y = np.mean(x), np.mean(y)
